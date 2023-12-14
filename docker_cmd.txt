@@ -1,0 +1,10 @@
+sudo docker run -it -e DISPLAY=$DISPLAY \
+                --privileged \
+                -v /tmp/.X11-unix/:/tmp/.X11-unix/ \
+                -v /dev/bus/usb:/dev/bus/usb \
+                -v /home/shu/catkin_docker_ws:/catkin_ws \
+                ros1-realsense:latest 
+
+
+
+sudo docker exec -it <container id> bash
